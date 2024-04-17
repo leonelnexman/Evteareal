@@ -1,0 +1,75 @@
+.page-404{
+    height: 70vh;
+    padding-top: 15.5rem;
+    background: url('../images/page-404.png');
+    background-size: cover;
+    @media (max-width: 962px){
+        background: url('../images/page-404mobile.png');
+        padding-top: 7rem;
+    }
+    &__title{
+        font-family: var(--second-family);
+        font-weight: 600;
+        font-size: 3.8rem;
+        text-align: center;
+        background: linear-gradient(134deg, #0085ff 0%, #1335e8 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        margin-bottom: 4rem;
+        @media (max-width: 962px){
+            display: none;
+            font-size: 2.5rem;
+        }
+    }
+    &__text{
+        font-family: var(--second-family);
+        font-weight: 600;
+        font-size: 3.3rem;
+        text-align: center;
+        color: #000;
+        margin: auto;
+        margin-bottom: 4rem;
+        @media (max-width: 962px){
+            font-size: 2.5rem;
+        }
+        span{
+            display: block;
+            background: linear-gradient(134deg, #0085ff 0%, #1335e8 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            @media (max-width: 962px){
+                display: inline;
+            }
+        }
+    }
+    &__link{
+        width: 26rem;
+        display: block;
+        margin: auto;
+        font-size: 1.8rem;
+        border: 2px solid var(--tekst);
+        border-radius: 1.5rem;
+        padding: 1.7rem 5.3rem;
+        color: var(--tekst);
+        background: linear-gradient(134deg, #0085ff 0%, #1335e8 100%);
+        margin-bottom: 3.5rem;
+        @media (max-width: 962px){
+            text-align: center;
+            white-space: nowrap;
+        }
+    }
+    &__descr{
+        font-family: var(--second-family);
+        font-weight: 600;
+        font-size: 2.3rem;
+        text-align: center;
+        color: #8c8c8c;
+        width: 100%;
+        @media (max-width: 962px){
+            font-size: 1.8rem;
+        }
+    }
+}

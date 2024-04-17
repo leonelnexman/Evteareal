@@ -1,0 +1,260 @@
+.order-page{
+    padding-top: 6.5rem;
+    overflow: hidden;
+    @media (max-width: 962px){
+        padding-top: 1.9rem;
+        background: url('../images/bg-ordermobile.png');
+    }
+    .like{
+        margin-bottom: 11rem;
+    }
+    .main-bg{
+        position: absolute;
+        top: 15.7rem;
+        img{
+            height: 100%;
+        }
+        @media (max-width: 962px){
+            display: none;
+        }
+    }
+}
+.order{
+    margin-bottom: 13rem;
+    @media (max-width: 962px){
+        margin-bottom: 7rem;
+    }
+    &__title{
+        font-family: var(--second-family);
+        font-weight: 600;
+        font-size: 3.8rem;
+        text-align: center;
+        background: linear-gradient(134deg, #0085ff 0%, #1335e8 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 6.5rem;
+        @media (max-width: 962px){
+            font-size: 3.5rem;
+            margin-bottom: 3.9rem;
+        }
+    }
+    &__wrapper{
+        display: flex;
+        width: 109.1rem;
+        margin: auto;
+        flex-wrap: wrap;
+        gap: 4.3rem;
+        @media (max-width: 962px){
+            gap: 1.9rem;
+            width: 100%;
+            flex-direction: column;
+        }
+    }
+    &__input{
+        font-family: var(--second-family);     
+        font-size: 1.8rem;
+        color: #8c8c8c;
+        border-radius: 1.5rem;
+        width: 33.5rem;
+        padding: 1.7rem 3.7rem;
+        border: 0.2rem solid #1041EB;
+        @media (max-width: 962px){
+           text-align: center;
+           width: 28.5rem;
+           margin: auto;
+           border-radius: 1.9rem;
+        }
+    }
+    textarea{
+        font-family: var(--second-family);     
+        font-size: 1.8rem;
+        color: #8c8c8c;
+        height: 28.6rem;
+        border-radius: 1.5rem;
+        width: 33.5rem;
+        padding: 1.7rem 3.7rem;
+        border: 0.2rem solid #1041EB;
+        resize: none;
+        @media (max-width: 962px){
+            display: none;
+        }
+    }
+    &__inner{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4.3rem;
+        max-width: 71.3rem;
+        @media (max-width: 962px){
+            gap: 2.5rem;
+         }
+    }
+    &__input-block{
+        width: 33.5rem;
+        @media (max-width: 962px){
+            width: 28.5rem;
+            margin: auto;
+         }
+    }
+    &__input-descr{
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 1.5rem;
+        color: #8c8c8c;
+        margin-bottom: 0.7rem;
+        @media (max-width: 962px){
+            font-size: 1.3rem;
+            text-align: center;
+         }
+        span{
+            background: linear-gradient(134deg, #0085ff 0%, #1335e8 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    &__select{
+       width: 33.5rem;
+    }
+    &__select-top{
+        font-size: 1.8rem;
+        color: var(--tekst);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        padding: 1.7rem;
+        border-radius: 1.5rem;
+        gap: 1rem;
+        border: 2px solid var(--fon);
+        background: linear-gradient(134deg, #0085ff 0%, #1335e8 100%);
+    }
+    &__buy{
+        font-size: 1.8rem;
+        padding: 1.7rem;
+        width: 33.5rem;
+        color: #fff;
+        border-radius: 1.5rem;
+        background:  linear-gradient(134deg, #ffe500 0%, #e86c13 100%);;
+        @media (max-width: 962px){
+            order: 1;
+        }
+    }
+    &__price{
+        font-family: var(--second-family);
+        font-weight: 500;
+        font-size: 2.7rem;
+        text-align: right;
+        color: #000;
+        span{
+            font-size: 2.9rem;
+            @media (max-width: 962px){
+                font-size: 1.9rem;
+            }
+        }
+        @media (max-width: 962px){
+            font-size: 1.9rem;
+            width: 100%;
+            text-align: center;
+        }
+    }
+    &__descr{
+        font-family: var(--second-family);
+        max-width: 34rem;
+        margin-left: auto;
+        font-size: 1.3rem;
+        color: #8c8c8c;
+        @media (max-width: 962px){
+            width: 25rem;
+            margin: auto;
+            text-align: center;
+            order: 3;
+        }
+    }
+}
+
+.your-order{
+    margin-bottom: 13rem;
+    &__wrapper{
+        justify-content: space-between;
+        display: flex;
+        @media (max-width: 962px){
+            flex-wrap: wrap;
+            gap: 1.9rem;
+        }
+    }
+    &__item{
+        position: relative;
+        max-width: 48.6rem;
+        display: flex;
+        gap: 2.1rem;
+        padding: 3.2rem 4.2rem 3.3rem 2rem;
+        border-radius: 1.8rem;
+        box-shadow: 0 0 23px 0 rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        @media (max-width: 962px){
+            gap: 0rem;
+            padding: 1.7rem 1rem;
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+    &__img{
+        width: 16.4rem;
+        height: 16.4rem;
+        @media (max-width: 962px){
+            width: 13.8rem;
+            height: 13.8rem;
+        }
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    &__art{
+        font-size: 1.7rem;
+        color: #8c8c8c;
+        margin-bottom: 1.1rem;
+    }
+    &__name{
+        font-size: 2rem;
+        color: #000;
+        margin-bottom: 2.7rem;
+        @media (max-width: 962px){
+            font-size: 1.7rem;
+            white-space: nowrap;
+        }
+    }
+    &__col{
+        position: relative;
+        display: flex;
+        font-size: 1.7rem;
+        color: #8c8c8c;
+        justify-content: space-between;
+        margin-bottom: 2.3rem;
+        @media (max-width: 962px){
+            flex-direction: column;
+            span{
+                position: absolute;
+                display: block;
+                top: -1.5rem;
+                right: 0rem;
+            }
+            p{
+                font-size: 1.3rem;
+                position: absolute;
+                left: -1.5rem;
+                bottom: -4.3rem;
+            }
+        }
+    }
+    &__price{
+        font-size: 2.1rem;
+        color: #000;
+        @media (max-width: 962px){
+            font-size: 1.7rem;
+            white-space: nowrap;
+            text-align: right;
+        }
+    }
+}

@@ -1,3 +1,33 @@
+.modal-filter{
+    display: none !important;
+    justify-content: flex-end;
+    background: rgba(26, 26, 26, 0.35);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 370%;
+    z-index: 7777777777777777;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    cursor: pointer;
+    &.active{
+        display: flex !important;
+        opacity: 1;
+        visibility: visible;
+        transition: all 0.3s;
+    }
+    .modal-content{
+        height: 139.7rem;
+        // height: 57rem;
+        // overflow: auto;
+        margin-top: 37rem;
+        padding: 10.5rem 24rem 30rem 11.7rem;
+        background: #fff;
+        border-radius: 4.5rem 0 0 4.5rem;
+    }
+}
 .modal{
     display: flex !important;
     justify-content: center;
@@ -44,5 +74,71 @@
         @media (max-width: 962px) {
             font-size: 2.5rem;
         }
+    }
+}
+
+.filter{
+    &__title{
+        font-weight: 500;
+        font-size: 2.6rem;
+        color: #1a1a1a;
+    }
+    &__top{
+        display: flex;
+        width: 28.6rem;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 8rem;
+    }
+    &__reset{
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 2.3rem;
+        background: linear-gradient(134deg, #0085ff 0%, #1335e8 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+    }
+    &__category{
+        margin-bottom: 6rem;
+    }
+    &__category-title{
+        font-size: 2.2rem;
+        color: #000;
+        padding-left: 3rem;
+        margin-bottom: 2.3rem;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 1.3rem;
+            width: 1.7rem;
+            height: 0.3rem;
+            border-radius: 0.5rem;
+            background:  linear-gradient(134deg, #0085ff 0%, #1335e8 100%);;
+        }
+    }
+    &__category-list{
+        display: flex;
+        flex-direction: column;
+        gap: 2.1rem;
+    }
+    &__category-item{
+        font-size: 1.8rem;
+        color: #1e1e1e;
+        input{
+            width: 1.9rem;
+            height: 1.9rem;
+        }
+    }
+    &__btn{
+        border: 2px solid var(--tekst);
+        border-radius: 1.5rem;
+        padding: 1.8rem 3.9rem;
+        width: 23rem;
+        color: var(--tekst);
+        font-weight: 500;
+        background: linear-gradient(134deg, #0085ff 0%, #1335e8 100%);
     }
 }

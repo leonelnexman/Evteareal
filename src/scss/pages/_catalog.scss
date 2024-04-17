@@ -1,0 +1,115 @@
+.catalog-section{
+    padding-top: 13.5rem;
+    @media (max-width:962px) {
+        padding-top: 3rem;
+    }
+    .main-bg{
+        top: 0;
+    }
+    .search__block{
+        width: 115.9rem;
+    }
+    .search__filter{
+        font-weight: 500;
+        font-size: 2.4rem;
+        background: linear-gradient(134deg, #0085ff 0%, #1335e8 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: flex;
+        align-items: center;
+        gap: 1.9rem;
+        svg{
+            width: 3.6rem;
+            height: 2.8rem;
+        }
+    }
+    .search{
+        position: relative;
+        @media (max-width:962px) {
+            .container{
+                padding: 0 5.2rem !important;
+            }
+            &__enter{
+                color: #fff;
+                border-radius: 2.1rem;
+                background: linear-gradient(134deg, #ffe500 0%, #e86c13 100%);
+            }
+            &__filter{
+                position: absolute;
+                right: 5.2rem;
+                top: 9.5rem;
+                p{
+                    display: none;
+                }
+            }
+            &__block{
+                width: 100%;
+            }
+            input{
+                width: 100%;
+                width: 23.2rem;
+            }
+            &__modifiers{
+                width: 100%;
+                flex-direction: column;
+            }
+            &__modifier{
+                width: 100%;
+                display: block;
+                margin: auto;
+            }
+            &__modifier-top{
+                width: 100%;
+            }
+        }
+    }
+}
+
+.products{
+    margin-bottom: 13rem;
+    @media (max-width:962px) {
+        margin-bottom: 7rem;
+    }
+    &__view{
+        font-family: var(--second-family);
+        font-weight: 500;
+        font-size: 2.2rem;
+        background: linear-gradient(134deg, #0085ff 0%, #1335e8 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: flex;
+        align-items: center;
+        text-decoration: underline;
+        text-underline-offset: 0.5rem;
+        text-decoration-color: #0085ff;
+        display: block;
+        margin-left: auto;
+        margin-top: 4.5rem;
+        gap: 1rem;
+        @media (max-width:962px) {
+            margin-top: 2.5rem;
+            font-size: 1.8rem; 
+        }
+        svg{
+            width: 1.9rem;
+            height: 0.9rem;
+        }
+    }
+}
+
+.like{
+    margin-bottom: 20rem;
+    @media (max-width:962px) {
+        margin-bottom: 10rem;
+    }
+    &__wrapper{
+        display: flex;
+        gap: 7.4rem;
+        @media (max-width:962px) {
+            flex-wrap: wrap;
+            gap: 3rem 2.4rem;
+        }
+    }
+}

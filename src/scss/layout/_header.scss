@@ -6,6 +6,10 @@
     .container{
         width: 153.8rem;
         max-width: 153.8rem;
+        @media (max-width: 962px) {
+            width: 100%;
+            padding: 0 1rem !important;   
+        }
     }
     &__wrapper{
      display: flex;
@@ -28,6 +32,13 @@
         line-height: 134%;
         color: #000;
         text-transform: uppercase;
+        @media (max-width:962px) {
+            font-family: var(--second-family);
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #000;
+            text-transform: lowercase;
+        }
         span{
             display: block;
             font-weight: 700;
@@ -35,6 +46,11 @@
              background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            @media (max-width:962px) {
+                color: 000;
+                font-weight: 400;
+                -webkit-text-fill-color: #000;
+            }
         }
     }
     .nav{
@@ -42,6 +58,9 @@
         align-items: center;
         gap: 6rem;
         margin-left: -7rem;
+        @media (max-width: 962px) {
+            display: none;  
+        }
         &__link{
             font-family: var(--second-family);
             font-weight: 400;
@@ -53,9 +72,27 @@
         display: flex;
         align-items: center;
         gap: 3.3rem;
+        @media (max-width: 962px) {
+            gap: 1.5rem,; 
+        }
         svg{
             width: 3rem;
             height: 3rem;
+            @media (max-width: 962px) {
+                width: 2.5rem;
+                height: 2.5rem;
+            }
         }
+    }
+}
+
+.hamburger{
+    display: none;
+    @media (max-width: 962px) {
+       display: block;
+       svg{
+           width: 2.3rem;
+           height: 1.9rem; 
+       }
     }
 }

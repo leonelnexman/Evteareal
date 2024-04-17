@@ -1,3 +1,16 @@
+.main-bg{
+    position: absolute;
+    left: 0;
+    top: 44rem;
+    width: 100%;
+    z-index: -1;
+    img{
+        width: 100%;
+    }
+    @media (max-width:962px) {
+        top: 31rem;
+    }
+}
 .main-section{
     margin-bottom: 12rem;
   &__banner{
@@ -10,6 +23,14 @@
         background-repeat: no-repeat;
         margin: auto;
         margin-top: -6.4rem;
+        @media (max-width:962px) {
+            width: 100%;
+            border-radius: 0;
+            height: 32.7rem;
+            background: url('../images/banner-mobile.jpg');
+            background-size: cover;
+            padding: 13rem 3.9rem 5rem;
+        }  
   }
   &__title{
     font-family: var(--font3);
@@ -19,16 +40,34 @@
     text-transform: uppercase;
     text-align: center;
     color: #fff;
+    @media (max-width:962px) {
+        font-size: 4.1rem;
+        line-height: 100%;
+        span{
+            font-size: 3rem !important;
+        }
+    }  
     span{
         display: block;
         font-size: 5.5rem;
     }
+  }
+  .container{
+    @media (max-width:962px) {
+        padding: 0 !important;
+    }  
   }
   &__list-wrapper{
     margin-top: 7rem;
     display: flex;
     justify-content: center;
     gap: 12rem;
+    @media (max-width:962px) {
+       margin-top: 3.1rem;
+       flex-wrap: wrap;
+       justify-content: center;
+       gap: 5rem 3.5rem;
+    }  
     }
     &__list-item{
         font-weight: 700;
@@ -46,6 +85,18 @@
         border-radius: 2rem 2rem 0 0;
         background: linear-gradient(to top, #fff, #fff) padding-box, linear-gradient(to top, #fff, #292A29) border-box;
         position: relative;
+        @media (max-width:962px) {
+            width: 12.7rem;
+            height: 12.7rem;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            &::before{
+                display: none;
+            }
+         }  
         &:last-child{
             &::before{
                 display: none;
@@ -63,24 +114,46 @@
             right: -12.3rem;
         }
         svg{
+            width: 7.1rem;
             height: 7.3rem;
+            @media (max-width:962px) {
+               height: 4.1rem; 
+             }  
+        }
+        p{
+            margin-bottom: -7rem;
+            font-size: 1.3rem;
         }
     }
 }
 
 .search{
     margin-bottom: 13rem;
+    @media (max-width:962px) {
+        margin-bottom: 6rem;
+    }
     &__block{
         width: 94.8rem;
         margin: auto;
+        @media (max-width:962px) {
+            width: 100%;
+        } 
     }
     &__wrapper{
         display: flex;
         align-items: flex-start;
         gap: 2.3rem;
+        @media (max-width:962px) {
+            flex-direction: column;
+        }
     }
     &__title{
         margin-bottom: 5rem;
+    }
+    &__modifier{
+        @media (max-width:962px) {
+            display: none;
+        } 
     }
     &__modifiers{
         width: 79.1rem;
@@ -88,11 +161,17 @@
         flex-wrap: wrap;
         gap: 2.3rem;
         justify-content: space-between;
+        @media (max-width:962px) {
+            width: 100%;
+        }
         input{
             width: 100%;
             border-radius: 1.5rem;
             padding: 1.5rem 4rem 1.9rem;
             border: 0.2rem solid #1041EB;
+            @media (max-width:962px) {
+                border-radius: 2.1rem;
+            }
         }
     }
     &__modifier-top{
@@ -116,15 +195,24 @@
         border-radius: 1.5rem;
         padding: 1.6rem 3.2rem;
         background: linear-gradient(134deg, #0085ff 0%, #1335e8 100%);
+        @media (max-width:962px) {
+            width: 100%;
+        }
     }
 }
 
 .categories{
     margin-bottom: 23rem;
+    @media (max-width:962px) {
+        margin-bottom: 5.9rem;
+    }
     &__wrapper{
         display: flex;
         gap: 2.4rem;
         flex-wrap: wrap;
+        @media (max-width:962px) {
+            gap: 1.9rem;
+        }
     }
     &__link{
         display: block;
@@ -137,6 +225,10 @@
         border-radius: 1.6rem;
         border: 0.1rem solid #1041EB;
         position: relative;
+        @media (max-width:962px) {
+            width: 16rem;
+            height: 15rem;
+        }
         &::before{
             content: '';
             position: absolute;
@@ -157,27 +249,49 @@
             -webkit-text-fill-color: transparent;
             position: relative;
             z-index: 7;
+            @media (max-width:962px) {
+                font-size: 1.6rem;
+                text-align: center;
+            }
         }
         &:nth-child(1){
             width: 57.1rem;
+            @media (max-width:962px) {
+                width: 16rem;
+            }
         }
         &:nth-child(2){
             width: 41.4rem;
+            @media (max-width:962px) {
+                width: 16rem;
+            }
         }
         &:nth-child(3){
             width: 40.7rem;
+            @media (max-width:962px) {
+                width: 16rem;
+            }
         }
         &:nth-child(4){
             width: 71.1rem;
+            @media (max-width:962px) {
+                width: 16rem;
+            }
         }
         &:nth-child(5){
             width: 70.5rem;
+            @media (max-width:962px) {
+                width: 100%;
+            }
         }
     }
 }
 
 .popular-products{
     margin-bottom: 12rem;
+    @media (max-width:962px) {
+        margin-bottom: 5.5rem;
+    }
 }
 
 .how-to-order{
@@ -185,6 +299,9 @@
     &__wrapper{
         display: flex;
         justify-content: center;
+        @media (max-width:962px) {
+           flex-direction: column;
+        }
     }
     &__info{
         max-width: 50rem;
@@ -304,16 +421,51 @@
 
 .contact{
     margin-bottom: 20rem;
+    @media (max-width:962px) {
+        margin-bottom: 11rem;
+    }
+    &__logo-block{
+        display: flex;
+        gap: 1rem;
+        img{
+            display: none;
+            @media (max-width:962px) {
+                display: block;
+                width: 5.2rem;
+                height: 3.5rem;
+            }
+        }
+    }
     &__wrapper{
         display: flex;
         justify-content: center;
         gap: 4.5rem;
+        @media (max-width:962px) {
+            flex-direction: column;
+            gap: 1rem;
+        }
+    }
+    &__info{
+        @media (max-width:962px) {
+            order: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
     &__form{
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 3rem;
+        @media (max-width:962px) {
+            order: 1;
+        }
         input{
+            @media (max-width:962px) {
+                width: 100%;
+                width: 28.5rem;
+            }
             border-radius: 1.7rem;
             width: 45.1rem;
             padding: 1.7rem 4.3rem;
@@ -323,6 +475,11 @@
     &__policy{
         display: flex;
         gap: 1.7rem;
+        @media (max-width:962px) {
+           justify-content: center;
+           align-items: center;
+           margin-bottom: 2.17rem;
+        }
         input{
             width: 2.4rem;
             height: 2.5rem;
@@ -330,6 +487,10 @@
         }
         p{
             white-space: nowrap;
+            @media (max-width:962px) {
+                white-space: wrap;
+                width: 23rem;
+            }
             a{
                 display: inline;
                 color: #1335e8;
@@ -342,6 +503,9 @@
         font-size: 2.4rem;
         color: #000;
         margin-bottom: 4rem;
+        @media (max-width:962px) {
+            font-size: 1.5rem;
+        }
     }
     &__link{
         font-size: 2rem;
@@ -350,9 +514,17 @@
         align-items: center;
         gap: 2.1rem;
         margin-bottom: 4.5rem;
+        @media (max-width:962px) {
+            font-size: 1.5rem;
+            margin-bottom: 2.1rem;
+        }
         svg{
             width: 3.5rem;
             height: 3.5rem;
+            @media (max-width:962px) {
+                width: 2.5rem;
+                height: 2.5rem;
+            }
         }
     }
     &__btn{

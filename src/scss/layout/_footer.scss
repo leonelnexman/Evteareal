@@ -1,25 +1,76 @@
 .footer{
+     position: relative;
+     z-index: 777;
     padding: 9rem 0;
     border-top: 1.5rem solid #F7DB9F;
+    background: #fff;
+    @media (max-width:962px) {
+          padding: 3.5rem;
+     }
+     .container{
+          @media (max-width:962px) {
+               padding: 0 !important;
+          }   
+     }
+     .header__logo{
+          @media (max-width:962px) {
+               font-family: var(--second-family);
+               font-weight: 600;
+               font-size: 1.5rem;
+               color: #000;
+               width: 100%;
+               margin-bottom: 3.5rem;
+               justify-content: center;
+               span{
+                    -webkit-text-fill-color: #000;
+               }
+          }
+     }
    &__wrapper{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    @media (max-width:962px) {
+     flex-direction: column;
+     }
    }
    .contact__link{
         margin-bottom: 2.7rem;
+        @media (max-width:962px) {
+          font-size: 1.7rem;
+     }
+        svg{
+          @media (max-width:962px) {
+               width: 2.1rem;
+               height: 2.1rem;
+          }
+        }
+   }
+   .contact__info{
+     @media (max-width:962px) {
+          align-items: flex-start;
+     }
    }
    .nav{
         display: flex;
         align-items: flex-start;
         flex-wrap: wrap;
         gap: 3rem 6.6rem;
-        width: 38.1rem;
+        width: 41rem;
+        @media (max-width:962px) {
+          width: 100%;
+          gap: 1.6rem 4.1rem;
+          margin-bottom: 3.1rem;
+          }
         .nav__link{
             font-family: var(--second-family);
             font-size: 1.7rem;
             color: #000;
             height: 2.4rem;
+            @media (max-width:962px) {
+               font-weight: 600;
+               font-size: 1.5rem;
+          }
         }
    }
 }
