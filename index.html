@@ -13,7 +13,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/css/splide.min.css">
     <link rel="stylesheet" href="./css/style.min.css">
 </head>
 <body>
@@ -63,11 +62,28 @@
                                 </defs>
                               </svg>
                         </button>
+                        <div class="hamburger">
+                            <svg width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.5913 12H0.591309V10H18.5913V12ZM18.5913 7H0.591309V5H18.5913V7ZM18.5913 2H0.591309V0H18.5913V2Z" fill="url(#paint0_linear_3576_660)" />
+                                <defs>
+                                  <linearGradient id="paint0_linear_3576_660" x1="-0.848691" y1="-2.94852e-06" x2="20.8573" y2="1.81787" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#0085FF" />
+                                    <stop offset="1" stop-color="#1335E8" />
+                                  </linearGradient>
+                                </defs>
+                              </svg>
+                        </div>
                     </div>
                 </div>
             </div>
         </header>
         <main class="main">
+            <div class="main-bg">
+                <picture>
+                    <source srcset="./images/bg-mobile.png" media="(max-width: 962px)">
+                    <img src="./images/bg.png" alt="">
+                </picture>
+            </div>
            <section class="main-section">
                 <div class="container">
                     <div class="main-section__banner">
@@ -85,7 +101,7 @@
                                       </linearGradient>
                                     </defs>
                                   </svg>
-                                  Конкурентные <br> цены
+                                <p> Конкурентные <br> цены</p>
                             </div>
                             <div class="main-section__list-item">
                                 <svg width="70" height="69" viewBox="0 0 70 69" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -97,7 +113,7 @@
                                       </linearGradient>
                                     </defs>
                                   </svg>
-                                  Большой <br> ассортимент
+                                 <p>Большой <br> ассортимент</p>
                             </div>
                             <div class="main-section__list-item">
                                 <svg width="131" height="66" viewBox="0 0 131 66" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -109,7 +125,7 @@
                                       </linearGradient>
                                     </defs>
                                   </svg>
-                                  Более 5000 <br> постоянных покупателей
+                                  <p>Более 5000 <br> постоянных покупателей</p>
                             </div>
                         </div>
                    </div>
@@ -273,6 +289,102 @@
                     </div>
                 </div>
            </section>
+           <div class="how-to-mobile">
+                <div class="container">
+                    <div class="how-to-mobile__title">Как заказать?</div>
+                    <div class="how-to-mobile__text">
+                        Используя <span>строку поиска </span>в каталоге, укажите марку автомобиля
+                    </div>
+                    <div class="how-to-order__info-input">
+                        <button class="how-to-order__info-enter">
+                            <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.5642 15.2193L8.80167 10.1701C6.68306 11.7667 3.7637 11.3762 2.08573 9.27172C0.407761 7.16725 0.53097 4.05092 2.36917 2.10265C4.20689 0.153529 7.14711 0.0223624 9.13283 1.80092C11.1185 3.57947 11.4872 6.6743 9.98084 8.92022L14.7433 13.9693L13.565 15.2184L13.5642 15.2193ZM5.90417 2.3164C4.32392 2.31603 2.96058 3.49185 2.63957 5.13198C2.31855 6.77212 3.1281 8.42579 4.57807 9.09179C6.02804 9.7578 7.71992 9.25308 8.62937 7.88323C9.53883 6.51337 9.41589 4.65488 8.335 3.43295L8.83917 3.96295L8.27084 3.36228L8.26084 3.35168C7.63733 2.68669 6.78867 2.31388 5.90417 2.3164Z" fill="white" />
+                            </svg>
+                        </button>
+                        <input type="text" placeholder="укажите марку автомобиля">
+                    </div>
+                    <svg class="arrow" width="16" height="22" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.29289 21.7071C7.68342 22.0976 8.31658 22.0976 8.70711 21.7071L15.0711 15.3431C15.4616 14.9526 15.4616 14.3195 15.0711 13.9289C14.6805 13.5384 14.0474 13.5384 13.6569 13.9289L8 19.5858L2.34315 13.9289C1.95262 13.5384 1.31946 13.5384 0.928932 13.9289C0.538407 14.3195 0.538407 14.9526 0.928932 15.3431L7.29289 21.7071ZM7 -4.37114e-08L7 21L9 21L9 4.37114e-08L7 -4.37114e-08Z" fill="url(#paint0_linear_1639_4562)" />
+                        <defs>
+                          <linearGradient id="paint0_linear_1639_4562" x1="8" y1="-1.68" x2="-4.59088" y2="9.05849" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#FFE600" />
+                            <stop offset="1" stop-color="#E86C13" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                      <div class="how-to-mobile__text text-sec">
+                        Затем <span>укажите марку, модель, модификацию</span>
+                    </div>
+                      <div class="how-to-order__info-input">
+                        <div class="how-to-order__info-top">
+                            Марка
+                            <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.29289 8.70711C7.68342 9.09763 8.31658 9.09763 8.70711 8.70711L15.0711 2.34315C15.4616 1.95262 15.4616 1.31946 15.0711 0.928932C14.6805 0.538408 14.0474 0.538408 13.6569 0.928932L8 6.58579L2.34315 0.928932C1.95262 0.538408 1.31946 0.538408 0.928932 0.928932C0.538408 1.31946 0.538408 1.95262 0.928932 2.34315L7.29289 8.70711ZM7 7L7 8L9 8L9 7L7 7Z" fill="url(#paint0_linear_1639_4568)" />
+                                <defs>
+                                  <linearGradient id="paint0_linear_1639_4568" x1="18.5" y1="-1.5" x2="15.2824" y2="9.78834" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#0085FF" />
+                                    <stop offset="1" stop-color="#1335E8" />
+                                  </linearGradient>
+                                </defs>
+                              </svg>
+                        </div>
+                    </div>
+                    <svg class="arrow" width="16" height="22" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.29289 21.7071C7.68342 22.0976 8.31658 22.0976 8.70711 21.7071L15.0711 15.3431C15.4616 14.9526 15.4616 14.3195 15.0711 13.9289C14.6805 13.5384 14.0474 13.5384 13.6569 13.9289L8 19.5858L2.34315 13.9289C1.95262 13.5384 1.31946 13.5384 0.928932 13.9289C0.538407 14.3195 0.538407 14.9526 0.928932 15.3431L7.29289 21.7071ZM7 -4.37114e-08L7 21L9 21L9 4.37114e-08L7 -4.37114e-08Z" fill="url(#paint0_linear_1639_4562)" />
+                        <defs>
+                          <linearGradient id="paint0_linear_1639_4562" x1="8" y1="-1.68" x2="-4.59088" y2="9.05849" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#FFE600" />
+                            <stop offset="1" stop-color="#E86C13" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                      <div class="how-to-mobile__text">
+                        <span>Используйте фильтры для быстрого поиска</span> по производителю или цене. Также вы можете самостоятельно <span>подобрать запчасти по вин коду</span> автомобиля в режиме онлайн.
+                    </div>
+                    <div class="how-to-order__info-wrapper">
+                        <input type="text" placeholder="поиск">
+                        <button>
+                            <svg width="40" height="32" viewBox="0 0 40 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.24868 6.44851H21.5798C22.1406 8.7144 24.1903 10.3996 26.6271 10.3996C29.0638 10.3996 31.1135 8.7144 31.6743 6.44851H38.7092C39.3988 6.44851 39.9579 5.88941 39.9579 5.19983C39.9579 4.51024 39.3988 3.95115 38.7092 3.95115H31.6742C31.1135 1.68525 29.0638 0 26.627 0C24.1902 0 22.1405 1.68525 21.5797 3.95115H1.24868C0.559098 3.95115 0 4.51024 0 5.19983C0 5.88941 0.559098 6.44851 1.24868 6.44851ZM26.6271 2.49737C28.1172 2.49737 29.3295 3.70968 29.3295 5.19975C29.3295 6.6899 28.1172 7.90221 26.6271 7.90221C25.1369 7.90221 23.9246 6.6899 23.9246 5.19975C23.9246 3.70968 25.1369 2.49737 26.6271 2.49737ZM1.24868 17.2487H8.28361C8.84442 19.5146 10.8941 21.1998 13.3309 21.1998C15.7677 21.1998 17.8173 19.5146 18.3781 17.2487H38.7092C39.3988 17.2487 39.9579 16.6896 39.9579 16C39.9579 15.3104 39.3988 14.7513 38.7092 14.7513H18.378C17.8172 12.4854 15.7676 10.8002 13.3308 10.8002C10.894 10.8002 8.84434 12.4854 8.28353 14.7513H1.24868C0.559098 14.7513 0 15.3104 0 16C0 16.6896 0.55902 17.2487 1.24868 17.2487ZM13.3308 13.2975C14.8209 13.2975 16.0332 14.5099 16.0332 16C16.0332 17.4901 14.8209 18.7024 13.3308 18.7024C11.8406 18.7024 10.6283 17.4901 10.6283 16C10.6283 14.5099 11.8406 13.2975 13.3308 13.2975ZM38.7092 25.5515H31.6742C31.1134 23.2856 29.0638 21.6003 26.627 21.6003C24.1902 21.6003 22.1406 23.2856 21.5797 25.5515H1.24868C0.559098 25.5515 0 26.1106 0 26.8002C0 27.4898 0.559098 28.0489 1.24868 28.0489H21.5798C22.1406 30.3147 24.1903 32 26.6271 32C29.0639 32 31.1135 30.3147 31.6743 28.0489H38.7092C39.3988 28.0489 39.9579 27.4898 39.9579 26.8002C39.9579 26.1106 39.3988 25.5515 38.7092 25.5515ZM26.6271 29.5026C25.1369 29.5026 23.9246 28.2903 23.9246 26.8002C23.9246 25.31 25.1369 24.0977 26.6271 24.0977C28.1172 24.0977 29.3295 25.31 29.3295 26.8002C29.3295 28.2903 28.1172 29.5026 26.6271 29.5026Z" fill="url(#paint0_linear_1639_4580)" />
+                                <defs>
+                                  <linearGradient id="paint0_linear_1639_4580" x1="-3.19663" y1="-7.86273e-06" x2="45.0914" y2="3.36654" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#0085FF" />
+                                    <stop offset="1" stop-color="#1335E8" />
+                                  </linearGradient>
+                                </defs>
+                              </svg>
+                        </button>
+                    </div>
+                    <svg class="arrow" width="16" height="22" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.29289 21.7071C7.68342 22.0976 8.31658 22.0976 8.70711 21.7071L15.0711 15.3431C15.4616 14.9526 15.4616 14.3195 15.0711 13.9289C14.6805 13.5384 14.0474 13.5384 13.6569 13.9289L8 19.5858L2.34315 13.9289C1.95262 13.5384 1.31946 13.5384 0.928932 13.9289C0.538407 14.3195 0.538407 14.9526 0.928932 15.3431L7.29289 21.7071ZM7 -4.37114e-08L7 21L9 21L9 4.37114e-08L7 -4.37114e-08Z" fill="url(#paint0_linear_1639_4562)" />
+                        <defs>
+                          <linearGradient id="paint0_linear_1639_4562" x1="8" y1="-1.68" x2="-4.59088" y2="9.05849" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#FFE600" />
+                            <stop offset="1" stop-color="#E86C13" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                      <div class="how-to-order__info-vin">
+                            <p>Можно найти товар по VIN-коду</p>
+                            <button>найти запчасть по VIN коду</button>
+                      </div>
+                      <svg class="arrow" width="16" height="22" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.29289 21.7071C7.68342 22.0976 8.31658 22.0976 8.70711 21.7071L15.0711 15.3431C15.4616 14.9526 15.4616 14.3195 15.0711 13.9289C14.6805 13.5384 14.0474 13.5384 13.6569 13.9289L8 19.5858L2.34315 13.9289C1.95262 13.5384 1.31946 13.5384 0.928932 13.9289C0.538407 14.3195 0.538407 14.9526 0.928932 15.3431L7.29289 21.7071ZM7 -4.37114e-08L7 21L9 21L9 4.37114e-08L7 -4.37114e-08Z" fill="url(#paint0_linear_1639_4562)" />
+                        <defs>
+                          <linearGradient id="paint0_linear_1639_4562" x1="8" y1="-1.68" x2="-4.59088" y2="9.05849" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#FFE600" />
+                            <stop offset="1" stop-color="#E86C13" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                      <div class="how-to-mobile__text">
+                        Чтобы <span>купить</span> автозапчасти, просто <span>добавьте товар в корзину и перейдите к процедуре оплаты</span>
+                    </div>
+                    <button class="how-to-mobile__cart">
+                        добавить в корзину
+                    </button>
+                </div>
+           </div>
            <section class="how-to-order">
                 <div class="container">
                     <div class="popular-products__title section__title">Как заказать?</div>
@@ -352,7 +464,7 @@
                                       </linearGradient>
                                     </defs>
                                   </svg>
-                                  Низкие цены
+                                  <p>Низкие цены</p>
                             </div>
                             <div class="main-section__list-item">
                                 <svg width="70" height="69" viewBox="0 0 70 69" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -364,7 +476,7 @@
                                       </linearGradient>
                                     </defs>
                                   </svg>
-                                  Огромный выбор
+                                  <p>Огромный выбор</p>
                             </div>
                             <div class="main-section__list-item">
                                 <svg width="85" height="77" viewBox="0 0 85 77" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -376,7 +488,7 @@
                                       </linearGradient>
                                     </defs>
                                   </svg>
-                                  Точный подбор
+                                  <p>Точный подбор</p>
                             </div>
                             <div href="#"class="main-section__list-item">
                                 <svg width="95" height="77" viewBox="0 0 95 77" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -388,7 +500,7 @@
                                       </linearGradient>
                                     </defs>
                                   </svg>
-                                  Быстрая доставка 
+                                  <p>Быстрая доставка </p>
                             </div>
                         </div>
                    </div>
@@ -408,7 +520,10 @@
                             </div>
                         </div>
                         <div class="contact__info">
-                            <div class="contact__title">Интернет-магазин <br> запчастей</div>
+                            <div class="contact__logo-block">
+                                <img src="./images/logo.svg" alt="">
+                                <div class="contact__title">Интернет-магазин <br> запчастей</div>
+                            </div>
                             <a href="tel:+79876543210" class="contact__link">
                                 <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M25.6594 30.6338H25.6185C20.0161 30.4959 14.6698 28.2589 10.6385 24.3658C6.74408 20.3383 4.5058 14.994 4.36753 9.39314C4.35928 8.60855 4.66734 7.85366 5.22228 7.29897L9.1802 3.34397C9.74968 2.77467 10.6728 2.77467 11.2423 3.34397L17.0756 9.17731C17.6449 9.74678 17.6449 10.6699 17.0756 11.2394L14.7481 13.5625C15.1798 15.1753 15.975 16.6679 17.0727 17.9258C18.3284 19.024 19.819 19.8197 21.4302 20.2519L23.7635 17.9273C24.333 17.358 25.2561 17.358 25.8256 17.9273L31.659 23.7606C32.2283 24.3301 32.2283 25.2532 31.659 25.8227L27.701 29.7792C27.1614 30.3245 26.4265 30.632 25.6594 30.6338ZM10.2083 6.43856H10.201L7.28437 9.36106C7.40329 14.2008 9.33525 18.8194 12.6977 22.3023C16.1808 25.6636 20.7985 27.5954 25.6375 27.7156L28.5644 24.7917L24.7844 21.0219L22.8987 22.9061C22.629 23.1788 22.2615 23.3326 21.8779 23.3333C21.7755 23.3334 21.6733 23.3226 21.5731 23.3013C19.143 22.7637 16.8866 21.625 15.0106 19.9894C13.375 18.1134 12.2363 15.857 11.6987 13.4269C11.5973 12.9438 11.7471 12.4423 12.0969 12.094L13.981 10.2083L10.2083 6.43856Z" fill="url(#paint0_linear_1809_2046)" />
@@ -463,10 +578,11 @@
                      </a>
                      <nav class="nav">
                          <a href="#" class="nav__link">Главная</a>
+                         <a href="#" class="nav__link">О нас</a>
+                         <a href="#" class="nav__link">Личный кабинет</a>
                          <a href="#" class="nav__link">Каталог</a>
                          <a href="#" class="nav__link">По VIN</a>
-                         <a href="#" class="nav__link">О нас</a>
-                         <a href="#" class="nav__link">Контакты</a>
+                         <a href="#" class="nav__link">Корзина</a>
                      </nav>
                      <div class="contact__info">
                         <a href="tel:+79876543210" class="contact__link">
@@ -521,9 +637,6 @@
         </div>
     </div>
     <script src="./js/swiper.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery.ripples@0.6.3/dist/jquery.ripples.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/js/splide.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
     <script type="module" src="./js/app.js"></script>
 </body>
 </html>
